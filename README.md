@@ -8,8 +8,8 @@ This repository provides instructions on how to set up and train a YOLOv8 model 
 - [Project Setup](#project-setup)
 - [Dataset Preparation](#dataset-preparation)
 - [Training the YOLOv8 Model](#training-the-yolov8-model)
+- [Evaluating the Model](#evaluating-the-model)
 - [Results and Evaluation](#results-and-evalution)
-- [Check Dependency Versions](#check-dependency-version)
 - [References](#references)
 
 ---
@@ -95,4 +95,46 @@ Once your virtual environment is set up, you can install the required packages b
        ├── val/
        └── test/
    ```
-   
+ ----
+
+ ## Training Configuration
+
+ 1. **Training Script**
+    Use the existing [training.py](https://github.com/Dynatech2/Build-Model-using-YoloV8/blob/main/training.py) script to start training the YOLOv8 model.
+
+2. **Training Parameters**
+   Configure the parameters in training.py as needed. For a comprehensive list of all parameters and hyperparameters you can change, please refer to the [Ultralytics documentation](https://docs.ultralytics.com/modes/train/#resuming-interrupted-trainings).
+
+3. **Model Saving Location**
+   The trained model will be saved in the directory specified in your training configuration. In the provided script, the default saving path is:
+   ```
+   runs/train/vehicle_detection/
+   ```
+   This directory will contain the model weights, evaluation metrics, and logs
+
+---
+
+## Evaluating the Model
+
+After training completes, the results (such as weights, evaluation metrics, and logs) will be saved in the specified project directory.
+
+To evaluate the trained model, you can add validation code in [validate.py](https://github.com/Dynatech2/Build-Model-using-YoloV8/blob/main/validate.py)
+
+Make sure to update the model_path and val_data variables with the correct paths for your trained model and validation dataset.
+
+---
+
+## Results and Evaluation
+
+After the training and evaluation processes are complete, you can analyze the results to understand the model's performance better. During evaluation, the following metrics will be printed to the console:
+
+1. Precision: Indicates the accuracy of positive predictions.
+2. Recall: Measures the model's ability to capture all positive instances.
+3. mAP (mean Average Precision): Average precision across classes, reflecting overall model performance.
+
+---
+## References
+- [Ultralytics dependecies](https://github.com/ultralytics/ultralytics/blob/main/pyproject.toml)
+- 
+
+
