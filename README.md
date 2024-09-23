@@ -10,8 +10,9 @@ This repository provides instructions on how to set up and train a YOLOv8 model 
 - [Training the YOLOv8 Model](#training-the-yolov8-model)
 - [Evaluating the Model](#evaluating-the-model)
 - [Results and Evaluation](#results-and-evalution)
-- [References](#references)
 - [Testing the Model on RTSP Stream](testing-the-model-on-rtsp-stream)
+- [References](#references)
+
 
 ---
 
