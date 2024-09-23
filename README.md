@@ -6,8 +6,7 @@ This repository provides instructions on how to set up and train a YOLOv8 model 
 
 - [Installation](#installation)
 - [Project Setup](#project-setup)
-- [Splitting the Dataset](#splitting-the-dataset)
-- [Training Configuration](#training-configuration)
+- [Dataset Preparation](#dataset-preparation)
 - [Training the YOLOv8 Model](#training-the-yolov8-model)
 - [Results and Evaluation](#results-and-evalution)
 - [Check Dependency Versions](#check-dependency-version)
@@ -71,4 +70,28 @@ Once your virtual environment is set up, you can install the required packages b
    Use the provided Python script [splitimages.py](https://github.com/Dynatech2/Build-Model-using-YoloV8/blob/main/splitimages.py) to split your dataset into training (80%), validation (10%), and testing (10%) sets. This script will organize your images and labels into their respective directories.
 
 2. **Create Dataset Configuration File**
-   After splitting the dataset, create a data.yaml file to define the paths to the training, validation, and testing datasets, as well as the class names. The data.yaml file should look like this:
+   After splitting the dataset, create a **data.yaml** file to define the paths to the training, validation, and testing datasets, as well as the class names. The **data.yaml** file should look like this:
+   ```
+   train: ./path/to/train/images
+   val: ./path/to/valid/images
+   test: ./path/to/test/images
+
+   nc: 6  # number of classes
+   names: ['class1', 'class2', 'class3', 'class4', 'class5', 'class6']
+   ```
+
+3. **Directory Structure After Splitting**
+   After running the splitting script, your dataset should be structured like this:
+
+   ```
+   dataset_split/
+   ├── images/
+   │   ├── train/
+   │   ├── val/
+   │   └── test/
+   └── labels/
+       ├── train/
+       ├── val/
+       └── test/
+   ```
+   
