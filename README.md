@@ -70,4 +70,5 @@ Once your virtual environment is set up, you can install the required packages b
 1. **Split the Dataset First**
    Use the provided Python script [splitimages.py](https://github.com/Dynatech2/Build-Model-using-YoloV8/blob/main/splitimages.py) to split your dataset into training (80%), validation (10%), and testing (10%) sets. This script will organize your images and labels into their respective directories.
 
-   
+2. **Create Dataset Configuration File**
+   After splitting the dataset, create a data.yaml file to define the paths to the training, validation, and testing datasets, as well as the class names. The data.yaml file should look like this:
