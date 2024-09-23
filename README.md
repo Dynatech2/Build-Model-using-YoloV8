@@ -11,6 +11,7 @@ This repository provides instructions on how to set up and train a YOLOv8 model 
 - [Evaluating the Model](#evaluating-the-model)
 - [Results and Evaluation](#results-and-evalution)
 - [References](#references)
+- [Testing the Model on RTSP Stream](testing-the-model-on-rtsp-stream)
 
 ---
 
@@ -118,7 +119,7 @@ Once your virtual environment is set up, you can install the required packages b
 
 After training completes, the results (such as weights, evaluation metrics, and logs) will be saved in the specified project directory.
 
-To evaluate the trained model, you can add validation code in [validate.py](https://github.com/Dynatech2/Build-Model-using-YoloV8/blob/main/validate.py)
+To evaluate the trained model, you can run validation code in [validate.py](https://github.com/Dynatech2/Build-Model-using-YoloV8/blob/main/validate.py)
 
 Make sure to update the model_path and val_data variables with the correct paths for your trained model and validation dataset.
 
@@ -131,6 +132,14 @@ After the training and evaluation processes are complete, you can analyze the re
 1. Precision: Indicates the accuracy of positive predictions.
 2. Recall: Measures the model's ability to capture all positive instances.
 3. mAP (mean Average Precision): Average precision across classes, reflecting overall model performance.
+
+---
+## Testing the Model on RTSP Stream
+
+You can test the trained YOLOv8 model using an RTSP stream by running the[test.py](https://github.com/Dynatech2/Build-Model-using-YoloV8/blob/main/test.py) script. This script captures the stream, performs object detection, and displays the results in real-time.
+
+**Exit the Stream**
+To stop the stream at any time, simply press 'q'.
 
 ---
 ## References
