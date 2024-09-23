@@ -4,10 +4,3 @@ test: /home/dyna/PycharmProjects/DYNAPROJECT/vehicledataset5_combined/test/image
 
 nc: 6
 names: ['class1', 'class2', 'class3', 'class4', 'class5', 'class6']
-
-roboflow:
-  workspace: vehicle-tmrl5
-  project: vehicle-type-5ospo
-  version: 7
-  license: Private
-  url: https://app.roboflow.com/vehicle-tmrl5/vehicle-type-5ospo/7
