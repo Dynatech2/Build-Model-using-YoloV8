@@ -68,6 +68,6 @@ Once your virtual environment is set up, you can install the required packages b
 ## Dataset Preparation
 
 1. **Split the Dataset First**
-   Use the provided Python script splitimages.py to split your dataset into training (80%), validation (10%), and testing (10%) sets. This script will organize your images and labels into their respective directories.
+   Use the provided Python script [splitimages.py](https://github.com/Dynatech2/Build-Model-using-YoloV8/blob/main/splitimages.py) to split your dataset into training (80%), validation (10%), and testing (10%) sets. This script will organize your images and labels into their respective directories.
 
    
