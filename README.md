@@ -6,11 +6,9 @@ This repository provides instructions on how to set up and train a YOLOv8 model 
 
 - [Installation](#installation)
 - [Project Setup](#project-setup)
-- [Dataset Preparation](#dataset-preparation)
 - [Splitting the Dataset](#splitting-the-dataset)
 - [Training Configuration](#training-configuration)
 - [Training the YOLOv8 Model](#training-the-yolov8-model)
-- [Results and Evaluation](#results-and-evalution)
 - [Results and Evaluation](#results-and-evalution)
 - [Check Dependency Versions](#check-dependency-version)
 - [References](#references)
@@ -67,3 +65,9 @@ Once your virtual environment is set up, you can install the required packages b
    pip install ultralytics
    ```
 ----
+## Dataset Preparation
+
+1. **Split the Dataset First**
+   Use the provided Python script splitimages.py to split your dataset into training (80%), validation (10%), and testing (10%) sets. This script will organize your images and labels into their respective directories.
+
+   
