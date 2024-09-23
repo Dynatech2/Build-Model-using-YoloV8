@@ -46,7 +46,7 @@ This repository provides instructions on how to set up and train a YOLOv8 model 
    - ultralytics=8.2.79
    - CUDA=12.6
    - torch=2.4.0
-   - torvision=0.19.0
+   - torchvision=0.19.0
 ----
 
 ## Project Setup
