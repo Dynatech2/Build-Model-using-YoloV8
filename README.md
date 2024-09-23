@@ -79,7 +79,8 @@ Once your virtual environment is set up, you can install the required packages b
    nc: 6  # number of classes
    names: ['class1', 'class2', 'class3', 'class4', 'class5', 'class6']
    ```
-
+   Replace the paths with the actual locations of your datasets.
+   
 3. **Directory Structure After Splitting**
    After running the splitting script, your dataset should be structured like this:
 
