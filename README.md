@@ -9,7 +9,7 @@ This repository provides instructions on how to set up and train a YOLOv8 model 
 - [Dataset Preparation](#dataset-preparation)
 - [Training the YOLOv8 Model](#training-the-yolov8-model)
 - [Evaluating the Model](#evaluating-the-model)
-- [Results and Evaluation](#results-and-evalution)
+- [Results and Evaluation](#results-and-evaluation)
 - [Testing the Model on RTSP Stream](testing-the-model-on-rtsp-stream)
 - [References](#references)
 
@@ -42,11 +42,11 @@ This repository provides instructions on how to set up and train a YOLOv8 model 
    ```
    nvidia-smi
    ```
-   The versions we are using are:
-   - ultralytics=8.2.79
-   - CUDA=12.6
-   - torch=2.4.0
-   - torchvision=0.19.0
+   **Versions Used:**
+   - Ultralytics: 8.2.79
+   - CUDA: 12.6
+   - Torch: 2.4.0
+   - Torchvision: 0.19.0
 ----
 
 ## Project Setup
@@ -99,7 +99,7 @@ Once your virtual environment is set up, you can install the required packages b
    ```
  ----
 
- ## Training Configuration
+ ## Training the YOLOv8 Model
 
  1. **Training Script**
     Use the existing [training.py](https://github.com/Dynatech2/Build-Model-using-YoloV8/blob/main/training.py) script to start training the YOLOv8 model.
