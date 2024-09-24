@@ -145,6 +145,6 @@ To stop the stream at any time, simply press 'q'.
 ---
 ## References
 - [Ultralytics dependecies](https://github.com/ultralytics/ultralytics/blob/main/pyproject.toml)
-- 
+- [Train using YOLOv8](https://www.youtube.com/watch?v=LNwODJXcvt4)
 
 
