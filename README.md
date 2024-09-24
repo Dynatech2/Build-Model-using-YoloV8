@@ -139,6 +139,8 @@ After the training and evaluation processes are complete, you can analyze the re
 
 You can test the trained YOLOv8 model using an RTSP stream by running the [test.py](https://github.com/Dynatech2/Build-Model-using-YoloV8/blob/main/test.py) script. This script captures the stream, performs object detection, and displays the results in real-time.
 
+![image](https://github.com/user-attachments/assets/83781ccd-7335-48d7-b831-59c2ecc8913e)
+
 **Exit the Stream**
 
 To stop the stream at any time, simply press 'q'.
