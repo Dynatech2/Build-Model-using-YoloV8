@@ -63,9 +63,8 @@ def copy_files(src_folders, dest_folder):
 
 # Define the list of source folders
 src_folders = [
-    '/media/dyna/506AE4B56AE498CC/pycharm-community-2024.2.2/PycharmProjects/DYNAPROJECT/vehicledataset',  # First folder
-    '/media/dyna/506AE4B56AE498CC/pycharm-community-2024.2.2/PycharmProjects/DYNAPROJECT/vehicledataset2s',  # Second folder
-    '/media/dyna/506AE4B56AE498CC/pycharm-community-2024.2.2/PycharmProjects/DYNAPROJECT/vehicledataset3'  # Third folder
+    '/media/dyna/506AE4B56AE498CC/pycharm-community-2024.2.2/PycharmProjects/DYNAPROJECT/vehicledataset2s',  # First folder
+    '/media/dyna/506AE4B56AE498CC/pycharm-community-2024.2.2/PycharmProjects/DYNAPROJECT/vehicledataset2s'  # Second folder
 ]
 
 # Define the destination folder
