@@ -106,7 +106,23 @@ Once your virtual environment is set up, you can install the required packages b
    ```
 **Combining Datasets** 
 
-This section provides instructions on how to combine different datasets into a single dataset.
+This section explains how to combine multiple datasets into a single dataset with a structured folder layout using the [combineimage.py](https://github.com/Dynatech2/Build-Model-using-YoloV8/blob/main/combineimage.py) script. The final dataset will be organized into two main directories: **images** and **labels**. Each of these directories will contain subdirectories for training, validation, and testing.
+
+**Folder Structure**
+
+The final combined dataset will have the following structure:
+```
+dataset/
+   ├── images/
+   │   ├── train/
+   │   ├── val/
+   │   └── test/
+   └── labels/
+       ├── train/
+       ├── val/
+       └── test/
+```
+Each source dataset should already have its own train, val, and test directories for images and labels. The goal is to combine all datasets into one unified folder with this structure.
 
 
  ----
@@ -129,9 +145,7 @@ This section provides instructions on how to combine different datasets into a s
    ```
    This directory will contain the model weights, evaluation metrics, and logs
    
-4. **Changing the Pretrained Model**  !!!! not complete
 
-   To change the pretrained model used in the project from `yolov8n.pt` to your previously created model, follow these steps:
 ---
 
 ## Evaluating the Model
@@ -164,8 +178,16 @@ You can test the trained YOLOv8 model using an RTSP stream by running the [test.
 To stop the stream at any time, simply press 'q'.
 
 ---
+**Moving Forward**
+
+1. Changing the Pretrained Model
+2. Plate number detection
+3. Video annotation
+---
 ## References
 - [Ultralytics dependecies](https://github.com/ultralytics/ultralytics/blob/main/pyproject.toml)
 - [Train using YOLOv8](https://www.youtube.com/watch?v=LNwODJXcvt4)
+- [Ultralytics YOLOv8](https://docs.ultralytics.com/)
+
 
 
