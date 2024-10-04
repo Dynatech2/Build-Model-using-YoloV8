@@ -178,7 +178,7 @@ You can test the trained YOLOv8 model using an RTSP stream by running the [test.
 To stop the stream at any time, simply press 'q'.
 
 ---
-**Moving Forward**
+## Moving Forward
 
 1. Changing the Pretrained Model
 2. Plate number detection
