@@ -42,6 +42,10 @@ This repository provides instructions on how to set up and train a YOLOv8 model 
    ```
    pip show torch
    ```
+   If you want to check the torchvision version:
+   ```
+   pip show torchvision
+   ```
    If you want to check CUDA version:
    ```
    nvidia-smi
