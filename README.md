@@ -104,25 +104,25 @@ Once your virtual environment is set up, you can install the required packages b
        ├── val/
        └── test/
    ```
-**Combining Datasets** 
+4. **Combining Datasets** 
 
-This section explains how to combine multiple datasets into a single dataset with a structured folder layout using the [combineimage.py](https://github.com/Dynatech2/Build-Model-using-YoloV8/blob/main/combineimage.py) script. The final dataset will be organized into two main directories: **images** and **labels**. Each of these directories will contain subdirectories for training, validation, and testing.
+   This section explains how to combine multiple datasets into a single dataset with a structured folder layout using the [combineimage.py](https://github.com/Dynatech2/Build-Model-using-YoloV8/blob/main/combineimage.py) script. The final dataset will be organized into two main directories: **images** and **labels**. Each of these directories will contain subdirectories for training, validation, and testing.
 
-**Folder Structure**
+   **Folder Structure**
 
-The final combined dataset will have the following structure:
-```
-dataset/
-   ├── images/
-   │   ├── train/
-   │   ├── val/
-   │   └── test/
-   └── labels/
-       ├── train/
-       ├── val/
-       └── test/
-```
-Each source dataset should already have its own train, val, and test directories for images and labels. The goal is to combine all datasets into one unified folder with this structure.
+   The final combined dataset will have the following structure:
+   ```
+   dataset/
+      ├── images/
+      │   ├── train/
+      │   ├── val/
+      │   └── test/
+      └── labels/
+          ├── train/
+          ├── val/
+          └── test/
+   ```
+   Each source dataset should already have its own train, val, and test directories for images and labels. The goal is to combine all datasets into one unified folder with this structure.
 
 
  ----
